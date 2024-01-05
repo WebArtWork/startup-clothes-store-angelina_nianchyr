@@ -1,0 +1,58 @@
+{
+	"title": "Page Title",
+	"designs": [
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina_nianchyr/img/p-one.png",
+			"short": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit"
+		}
+	],
+	"products": [
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina_nianchyr/img/p-one.png",
+			"short": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit",
+			"price": 123
+		},
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina_nianchyr/img/p-one.png",
+			"short": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit",
+			"price": 123
+		},
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina_nianchyr/img/p-one.png",
+			"short": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit",
+			"price": 123
+		},
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina_nianchyr/img/p-one.png",
+			"short": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit",
+			"price": 123
+		}
+	],
+	"latest_products": [
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina_nianchyr/img/3.webp",
+			"short": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit",
+			"price": 123
+		},
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina_nianchyr/img/p-one.png",
+			"short": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit",
+			"price": 123
+		}
+	],
+	"articles": [
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina_nianchyr/img/p-one.png",
+			"short": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit",
+			"price": 123
+		}
+	]
+}

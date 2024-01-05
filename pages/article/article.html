@@ -1,0 +1,16 @@
+<!-- main -->
+<main class="main">
+	<div class="article__title">
+		<p>{{{article.name}}}</p>
+	</div>
+	<!-- article -->
+	<div class="article">
+		<!-- мінімум 2 елементи -->
+		<div class="article__photo">
+			<img src="{{{article.thumb}}}" alt="">
+		</div>
+	</div>
+	<pre class="article__text">
+		{{{article.description|safe}}}
+	</pre>
+</main>

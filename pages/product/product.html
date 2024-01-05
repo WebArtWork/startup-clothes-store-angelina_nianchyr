@@ -1,0 +1,116 @@
+<!-- main -->
+<main class="main">
+	<!-- product -->
+	<div class="product">
+		<!-- left block for photo -->
+		<div class="product__photo">
+			<img src="{{{product.thumb}}}" alt="">
+		</div>
+		<!-- right block for description -->
+		<div class="product__description">
+			<p class="product__description-name">{{{product.name}}}</p>
+			{% if product.data.article %}
+			<p class="product__description-detail">АРТИКУЛ: {{{product.data.article}}}</p>
+			{% endif %}
+			<p class="product__description-price">{{{product.price}}} грн</p>
+			<hr class="product__description-line">
+			{% if product.data.material %}
+			<p class="product__description-detail">МАТЕРІАЛ: {{{product.data.material}}}</p>
+			{% endif %}
+			{% if product.data.color %}
+			<p class="product__description-detail">КОЛІР: {{{product.data.color}}}</p>
+			{% endif %}
+			{% if product.data.size %}
+			<p class="product__description-detail">РОЗМІР: {{{product.data.size}}}</p>
+			{% endif %}
+			<hr class="product__description-line">
+
+			<!-- buying -->
+			<div class="product__buying">
+				<select class="product__buying-list">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10+</option>
+				</select>
+				<button class="product__buying-button">Додати до корзини</button>
+			</div>
+			<div class="product__button">
+				<button>Купити зараз</button>
+			</div>
+			<hr class="product__description-line">
+
+			<!-- tabs -->
+			<div class="product__tabs">
+				<div class="product__tab">
+					{% if product.data.exchange_and_return %}
+					<button class="product__tablinks" onclick="openInfo(event, 'Description')" id="defaultOpen">Опис</button>
+					{% endif %}
+					{% if product.data.details %}
+					<button class="product__tablinks" onclick="openInfo(event, 'Detail')">Деталі</button>
+					{% endif %}
+					{% if product.data.supply_and_payment %}
+					<button class="product__tablinks" onclick="openInfo(event, 'Info')">Інформація</button>
+					{% endif %}
+				</div>
+
+				{% if product.data.exchange_and_return %}
+				<div id="Description" class="product__tabcontent">
+					<p class="product__tabcontent-text">{{{product.data.exchange_and_return}}}</p>
+				</div>
+				{% endif %}
+				{% if product.data.details %}
+				<div id="Detail" class="product__tabcontent">
+					<p class="product__tabcontent-text">{{{product.data.details}}}</p>
+				</div>
+				{% endif %}
+				{% if product.data.supply_and_payment %}
+				<div id="Info" class="product__tabcontent">
+					<p class="product__tabcontent-text">{{{product.data.supply_and_payment}}}</p>
+				</div>
+				{% endif %}
+			</div>
+			<hr class="product__description-line">
+
+			<!-- details -->
+			{% if product.data.free_returns %}
+			<div class="product__detail">
+				<span class="material-symbols-outlined">
+					cached
+				</span>
+				<p>Free 30 Days Returns</p>
+			</div>
+			{% endif %}
+			{% if product.data.free_shipping %}
+			<div class="product__detail">
+				<span class="material-symbols-outlined">
+					local_shipping
+				</span>
+				<p>Free shipping on orders over $100</p>
+			</div>
+			{% endif %}
+			{% if product.data.warranty %}
+			<div class="product__detail">
+				<span class="material-symbols-outlined">
+					volunteer_activism
+				</span>
+				<p>1 year warranty</p>
+			</div>
+			{% endif %}
+
+		</div>
+	</div>
+
+	<!-- photo after product -->
+	<div class="picture">
+		<p class="picture__text-one">Recycled Materials</p>
+		<p class="picture__text-two">We partner with high quality jewellers who only use recycled gold, AAA-grade gemstones, and ethically sourced diamonds.</p>
+	</div>
+
+</main>

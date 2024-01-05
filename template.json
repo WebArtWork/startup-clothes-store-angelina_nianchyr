@@ -1,0 +1,141 @@
+{
+	"title": "Welcome to waw Template",
+	"thumb": "https://wawify.com/api/file/get/general/1690188859294.png",
+	"description": "description",
+	"keywords": "keywords",
+	"prefix": "/angelina_nianchyr",
+	"picture": "picture",
+	"author": "author",
+	"moderators": [],
+	"scss": "scss/index.scss",
+	"variables": {
+		"primary_color": "#d3c9b7",
+		"secondary_color": "#f2f1ed",
+		"primary_text_color": "#000000",
+		"secondary_text_color": "#FFFFFF",
+		"primary_radius": "0",
+		"secondar_radius": "0",
+		"telegram": "",
+		"instagram": "",
+		"facebook": "",
+		"gmail": "",
+		"phone": "",
+		"land_video": "xfgBijPAR6s",
+		"land_image": "/angelina_nianchyr/img/2.webp",
+		"land_tag": "Affordable Luxury",
+		"land_url": "/products",
+		"land_url_name": "Shop The collection",
+		"land_description": "Beautiful pieces to pass down for generations",
+		"land_subsection": "Lorem ipsum dolor sit, amet"
+	},
+	"categories": [
+		{
+			"name": "Category Name",
+			"tags": [
+				{
+					"thumb": "/angelina_nianchyr/img/p-one.png",
+					"id": "Tag",
+					"url": "/products",
+					"name": "Tag Name"
+				}
+			]
+		}
+	],
+	"store": {
+		"name": "Store Name",
+		"description": "Store Description"
+	},
+	"footer": {
+		"articles": [
+			{
+				"name": "Name1",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit tenetur porro qui veniam et repudiandae. Vero in ipsa dicta harum iusto!"
+
+			},
+
+			{
+				"name": "Name2",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit tenetur porro qui veniam et repudiandae. Vero in ipsa dicta harum iusto!"
+
+			},
+
+			{
+				"name": "Name3",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit tenetur porro qui veniam et repudiandae. Vero in ipsa dicta harum iusto!"
+
+			},
+
+
+			{
+				"name": "Name4",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit tenetur porro qui veniam et repudiandae. Vero in ipsa dicta harum iusto!"
+
+			},
+
+
+			{
+				"name": "Name",
+				"thumb": "https://neryxomka.com/template/img/welcome.png",
+				"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit tenetur porro qui veniam et repudiandae. Vero in ipsa dicta harum iusto!"
+
+			}
+		],
+		"products": [
+			{
+				"name": "Name1",
+				"thumb": "https://neryxomka.com/template/img/welcome.png"
+			},
+
+			{
+				"name": "Name2",
+				"thumb": "https://neryxomka.com/template/img/welcome.png"
+			},
+
+			{
+				"name": "Name3",
+				"thumb": "https://neryxomka.com/template/img/welcome.png"
+			},
+
+			{
+				"name": "Name3",
+				"thumb": "https://neryxomka.com/template/img/welcome.png"
+			},
+
+			{
+				"name": "Name3",
+				"thumb": "https://neryxomka.com/template/img/welcome.png"
+			},
+
+			{
+				"name": "Name3",
+				"thumb": "https://neryxomka.com/template/img/welcome.png"
+			}
+		],
+		"contents": [
+			{
+				"name": "NameTitle",
+				"thumb": "/angelina_nianchyr/img/4.webp",
+				"url": "Lorem ipsum ?"
+			},
+			{
+				"name": "NameTitle",
+				"thumb": "/angelina_nianchyr/img/8.webp",
+				"url": "Lorem ipsum ?"
+			},
+			{
+				"name": "NameTitle",
+				"thumb": "/angelina_nianchyr/img/7.webp",
+				"url": "Lorem ipsum ?"
+			},
+			{
+				"name": "NameTitle",
+				"thumb": "/angelina_nianchyr/img/5.webp",
+				"url": "Lorem ipsum ?"
+			}
+		]
+	}
+}

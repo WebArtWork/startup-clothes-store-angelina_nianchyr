@@ -1,0 +1,9 @@
+{% for design in designs %}
+<a href="{{{design.url || '/design/'+design.id}}}" class="design__item">
+	<h1>{{{design.name}}}</h1>
+	<img src="{{{design.thumb}}}" alt="{{{design.name}}}">
+	<pre>
+		{{{design.short|safe}}}
+	</pre>
+</a>
+{% endfor %}

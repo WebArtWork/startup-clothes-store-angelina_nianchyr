@@ -1,0 +1,29 @@
+{
+    "title": "Page Title",
+    "products": [
+        {
+            "id": "something",
+            "name": "something",
+            "short": "something",
+            "thumb": "/angelina_nianchyr/img/7.webp"
+        },
+        {
+            "id": "something",
+            "name": "something",
+            "short": "something",
+            "thumb": "/angelina_nianchyr/img/8.webp"
+        },
+        {
+            "id": "something",
+            "name": "something",
+            "short": "something",
+            "thumb": "/angelina_nianchyr/img/9.webp"
+        },
+        {
+            "id": "something",
+            "name": "something",
+            "short": "something",
+            "thumb": "/angelina_nianchyr/img/10.webp"
+        }
+    ]
+}

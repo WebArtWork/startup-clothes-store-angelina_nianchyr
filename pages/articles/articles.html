@@ -1,0 +1,27 @@
+<!-- main -->
+<main class="main">
+	<!-- all news -->
+	<div class="articles">
+		<div>
+			<p class="articles__title">Новини</p>
+		</div>
+		<div class="articles__news">
+			<!--тут має бути мінімум 3-4 елементи -->
+			{% for article in articles %}
+			<div class="articles__blocks">
+				<div class="articles__block-title">
+					<p>{{{article.name}}}</p>
+				</div>
+				<a class="articles__block" href="/article/{{{article.id}}}">
+					<div class="articles__block-photo">
+						<img src="{{{article.thumb}}}">
+					</div>
+					<div class="articles__block-text">
+						<pre>{{{article.short}}}</pre>
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</main>

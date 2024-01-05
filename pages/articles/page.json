@@ -1,0 +1,25 @@
+{
+    "title": "Page Title",
+    "articles": [
+        {
+            "name": "NameTitle",
+            "thumb": "/angelina_nianchyr/img/4.webp",
+            "short": "Lorem ipsum ?"
+        },
+        {
+            "name": "NameTitle",
+            "thumb": "/angelina_nianchyr/img/8.webp",
+            "short": "Lorem ipsum ?"
+        },
+        {
+            "name": "NameTitle",
+            "thumb": "/angelina_nianchyr/img/7.webp",
+            "short": "Lorem ipsum ?"
+        },
+        {
+            "name": "NameTitle",
+            "thumb": "/angelina_nianchyr/img/5.webp",
+            "short": "Lorem ipsum ?"
+        }
+    ]
+}

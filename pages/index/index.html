@@ -1,0 +1,138 @@
+<!-- main -->
+<main class="main">
+
+	<!-- photo -->
+	<div class="photo">
+
+		<!-- <video id="myVideo" class="photo__video" autoplay preload muted loop src="/angelina_nianchyr/img/lands.MP4"
+			poster="/angelina_nianchyr/img/prints-1.jpg">
+		</video> -->
+
+		{% if variables.land_video %}
+		<!-- <div id="video-background">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{{variables.land_video}}}"
+				frameborder="0" allowfullscreen></iframe>
+		</div> -->
+
+		<div id="video-background">
+			<img src="/angelina_nianchyr/img/prints-1.jpg" alt="Poster Image" class="video-poster">
+			<iframe src="https://www.youtube.com/embed/{{{variables.land_video}}}?autoplay=1&mute=1&controls=0" frameborder="0" allowfullscreen></iframe>
+		</div>		
+		
+		{% endif %}
+
+		{% if !variables.land_video && variables.land_image %}
+		<img class="photo__video" src="{{{variables.land_image}}}" alt="">
+		{% endif %}
+
+		<div class="photo__filling">
+			<p class="photo__text-one">{{{variables.land_name}}}</p>
+			<p class="photo__text-two">{{{variables.land_description}}}</p>
+			<a href="{{{variables.land_url}}}"><button class="photo__button">{{{variables.land_url_name}}}</button></a>
+			<a href="/sales"><button class="photo__button">Sales</button></a>
+		</div>
+
+	</div>
+
+	<!-- text -->
+	<!-- <div class="text">
+		<p class="text__one">Fine clothes for every day. Always in trend and always fashionable.</p>
+
+		<p class="text__two">Shop our modern <a href="/products"><img class="text__image"
+					src="/angelina_nianchyr/img/2.webp"></a> clothes,
+			bestselling fine collection</p>
+		<p class="text__two"> <a href="/products"><img class="text__image" src="/angelina_nianchyr/img/5.webp"></a>
+			and thoughtfully
+			<a href="/products"><img class="text__image" src="/angelina_nianchyr/img/4.webp"></a>curated image.
+		</p>
+	</div> -->
+
+	<!-- collections -->
+	<div class="collections">
+		{% for category in categories %} {% for tag in
+		category.tags %}
+		<div class="collections__block">
+			<a class="collections__block-link" href="/products">
+				<img src="{{{tag.thumb}}}">
+				<p class="collections__block-name">{{{tag.name}}}</p>
+				<p class="collections__block-description">{{{tag.description}}}</p>
+			</a>
+		</div>
+		{% endfor %}{% endfor %}
+	</div>
+
+	<!-- sale -->
+	<!-- <div class="sale">
+		<div class="sale__text">
+			<div class="sale__text-left">
+				<p>Get 20% off all sale items</p>
+			</div>
+			<div class="sale__text-right">
+				<p>Use code EXTRA at checkout</p>
+			</div>
+		</div>
+	</div> -->
+
+	<!--  news -->
+	<div class="tidings">
+		<div>
+			<p class="tidings__title">Новини</p>
+		</div>
+		<!-- тут має бути 3 елементи -->
+		<div class="tidings__news">
+			{% for article in articles %}
+			<div class="tidings__blocks">
+				<div class="tidings__block-title">
+					<p>{{{article.name}}}</p>
+				</div>
+				<a class="tidings__block" href="/article/{{{article.id}}}">
+					<div class="tidings__block-photo">
+						<img src="{{{article.thumb}}}">
+					</div>
+					<div class="tidings__block-text">
+						<p>{{{article.short}}}</p>
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<!-- shopping -->
+	<div class="shopping">
+		{% for product in latest_products %}
+		<div class="shopping__left">
+
+			<div class="shopping__left-photo">
+				<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
+			</div>
+
+			<div class="shopping__left-description">
+				<h2>{{{product.name}}}</h2>
+				<p>{{{product.short}}}</p>
+				<a href="/product">
+					<button>Review</button>
+				</a>
+			</div>
+
+		</div>
+		{% endfor %}
+	</div>
+
+	<!-- subsection -->
+	<div class="subsection">
+		<p>{{{variables.land_subsection}}}</p>
+	</div>
+
+	<!-- photo-slider -->
+	<div class="slider">
+		<!-- тут має бути мінімум 4 елементи -->
+		{% for product in products %}
+		<div class="slider__container-block">
+			<a class="slider__container-link" href="/product/{{{product.id}}}">
+				<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+</main>

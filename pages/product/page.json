@@ -1,0 +1,21 @@
+{
+    "title": "Page Title",
+    "product": {
+		"price": 123,
+		"name": "Name",
+		"description": "Description",
+		"thumb": "/angelina_nianchyr/img/prints.jpg",
+		"data": {
+			"article": "article",
+			"material": "material",
+			"color": "color",
+			"size": "size",
+			"exchange_and_return": "exchange_and_return",
+			"details": "details",
+			"supply_and_payment": "supply_and_payment",
+			"free_returns": "free_returns",
+			"free_shipping": "free_shipping",
+			"warranty": "warranty"
+		}
+	}
+}

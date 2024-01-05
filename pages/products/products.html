@@ -1,0 +1,31 @@
+<!-- main -->
+<main class="main">
+	<!-- tabs for products -->
+	<div class="products">
+		<div class="products__tags">
+			{% for category in categories %}
+				<p>{{{category.name}}}</p>
+				<ul style="list-style-type:square;">
+				{% for tag in category.tags %}
+				<a href="/products/{{{tag.id}}}"><li>{{tag.name}}</li></a>
+				{% endfor %}
+			</ul>
+			{% endfor %}
+		</div>
+
+		<div class="products__clothes">
+			<div class="products__items">
+				{% for product in products %}
+				<div class="products__tabcontent-photo">
+					<a class="products__tabcontent-link" href="/product/{{{product.id}}}">
+						<img src="{{{product.thumb}}}">
+						<figcaption class="products__tabcontent-text">{{{product.name}}}</figcaption>
+						<span>{{{product.price}}} грн</span>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+</main>

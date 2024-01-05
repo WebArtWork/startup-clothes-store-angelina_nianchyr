@@ -1,0 +1,248 @@
+.product {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    // left block
+    &__photo {
+        width: 47%;
+        padding: 30px 0;
+
+        & img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+            padding: 15px 0;
+        }
+    }
+
+    // right block
+    &__description {
+        width: 47%;
+        height: 100%;
+        padding: 45px 0;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0px;
+
+    }
+
+    &__description-name {
+        font-size: 40px;
+        margin: 0;
+        color: var(--primary_text_color);
+    }
+
+    &__description-price {
+        font-size: 25px;
+        color: var(--primary_text_color);
+    }
+
+    &__description-line {
+        width: 100%;
+        height: 1px;
+        border-width: 0;
+        background-color: black;
+    }
+
+    &__description-detail {
+        font-size: 25px;
+        margin: 0;
+        padding: 15px 0;
+        color: var(--primary_text_color);
+    }
+
+    // buying
+    &__buying {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    &__buying-list {
+        width: 23%;
+        font-size: 27px;
+
+    }
+
+    &__buying-button {
+        width: 75%;
+        background-color: transparent;
+        border: 3px solid rgb(192, 180, 147);
+        cursor: grab;
+        transition: 300ms;
+        font-size: 23px;
+    }
+
+    &__buying-button:hover {
+        border-radius: var(--secondary_radius);
+    }
+
+    &__button {
+        width: 100%;
+        height: 60px;
+
+        & button {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(192, 180, 147);
+            border: none;
+            cursor: grab;
+            transition: 300ms;
+            font-size: 23px;
+        }
+
+        & button:hover {
+            border-radius: var(--secondary_radius);
+        }
+    }
+
+    // tabs
+    &__tab {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        & button {
+            background-color: transparent;
+            font-size: 25px;
+        }
+    }
+
+    &__tablinks {
+        margin-bottom: 5px;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+
+    &__tablinks:hover {
+        border-bottom: 1px solid black;
+    }
+
+    &__tablinks.active {
+        border-bottom: 1px solid black;
+    }
+
+    &__tabcontent-text {
+        padding-top: 5px;
+        text-align: center;
+        font-size: 25px;
+        color: var(--primary_text_color);
+        cursor: context-menu;
+    }
+
+    // detail
+    &__detail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--primary_text_color);
+
+        & p {
+            font-size: 20px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.picture {
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-image: url("../img/photo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__text-one {
+       color: var(--primary_text_color);
+        font-size: 65px;
+        margin: 0;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    &__text-two {
+        color: var(--primary_text_color);
+        margin: 0;
+        padding: 15px 0;
+        font-size: 23px;
+        text-align: center;
+    }
+}
+
+
+// MEDIA
+@media (max-width: 1450px) {
+    .product {
+        flex-direction: column;
+
+        &__photo {
+            // width: 100%;
+
+            & img {
+                height: 650px;
+            }
+        }
+
+        &__description {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .product {
+        &__photo {
+            & img {
+                height: 550px;
+            }
+        }
+
+        &__buying-button {
+            font-size: 19px;
+        }
+
+        &__tab {
+            & button {
+                font-size: 20px;
+            }
+        }
+
+        &__tabcontent-text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .product {
+        &__photo {
+            & img {
+                height: 300px;
+            }
+        }
+
+        &__tab {
+            & button {
+                font-size: 18px;
+            }
+        }
+
+        &__tabcontent-text {
+            font-size: 18px;
+        }
+    }
+}
